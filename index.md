@@ -2,122 +2,45 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+In this website I will give you a quick walkthrough of my projects, and experiences in coding. As well as some of my personal interests
 
-[Link to another page](./another-page.html).
+# About Me
 
-There should be whitespace between paragraphs.
+I'm a computer science graduate from UOIT (or as they tell me, it's "OnTechU" now), after my graduation I spent another year doing research and teaching, to figure out where my core interests in computer science lied. Afterwords I decided what I had the most fun doing was software development, and web design. I'm currently working freelance trying to hone my skills for the workplace.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+In my free time I like playing guitar, and sing in a band, just for fun. I also work on fun programming projects like physics sims, or teaching AI to play games. But hey, this isn't a recipe for my grandmas famous apple pie so enough intro.
 
-# Header 1
+# Undergraduate Projects
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+First I'm going to go through my most notable projects from my undergrad.
 
-## Header 2
+## Snake Frenzy
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+The first project worth mentioning was one from my second year, a game called snake frenzy. Obviously the game of snake isn't very complex, and I've recreated it in a much more efficient manner now in an hour or so in pygame. However, this was my first group programming project, and it had a few extra features such as menu's, music and sound effects, and an online leaderboard.
 
-### Header 3
+For more information check it out here
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+## Robot Hockey
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+This project was for an open ended class about learning new programming languages, you were to create whatever you wanted in a language you had no experience in. I chose to create a physics based hockey game, using square robots. The game features full controller support, and was built primarily in Kotlin with some Java backend.
 
-#### Header 4
+For more information check it out here
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Water Sim
 
-##### Header 5
+This is actually 2 projects in 1. The first was a rather slow running simulation of water droplets interaction together, to actually view it properly it was designed to save frames to file, and than combine them to video at the end for real time playback. This was an extremely challenging project, and took a lot of math understanding to run.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+The second part was where I combined with a partner, originally we were going to have a kind of fish tank. Where I simulated the water, and they simulated the AI for the fish. It became quickly apparent however my current setup was much much too slow to render for an entire tank. This meant I had to change my model from being particle based, to using stationary pixels of water. Since the water now couldn't move, it instead gave a force in a direction based on how the fish were moving through it (creating wakes).
 
-###### Header 6
+For both implimentations look here
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## Undergrad Thesis - Video Summarization
 
-### There's a horizontal rule below this.
+I decided to complete an optional undergrad thesis, where I created a program for automatically summarizing video. This involved learning OpenCv2, and some basic AI. Essentially, I would cut the video into segments, than move the start and end times of the segments based on camera movement. This means all cuts are done when hopefully nothing is happening on screen (or as little as possible). Than every segment is rated based on several categories of quality. Finally the program decides which categories are the most important, and creates a final decision on which segments to choose. 
 
-* * *
+Than based on how much we wish to shrink the video, we create a new summarization which uses an algorithm to weigh length against importance.
 
-### Here is an unordered list:
+For more information check it out here
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+## Graduate Project - User Study
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
